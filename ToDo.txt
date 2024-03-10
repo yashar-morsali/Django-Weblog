@@ -1,0 +1,26 @@
+(Done)create folder and venv and install django , CKeditor  
+
+(Done)create project and blog app for weblog - 
+
+(Done)create a git repository
+
+(Done)find a good template for blog (Bootstrap)
+
+()create models for weblog (
+    posts , categories , users-profile
+    , comments , tags  )
+
+
+()create views and urls for (
+    home , post view , search , pagination ,
+
+)
+() customize template 
+
+
+()apply models and crud on template
+
+()test the website for using with admin page 
+
+()customize admin panel or create a new one for users login 
+and crud oprations 
