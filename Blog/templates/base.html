@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {% block title%}
+  {% endblock title %}
+
+	<link rel="icon" href="img/Fevicon.png" type="{% static "image/png" %}">
+
+  <link rel="stylesheet" href="{% static "vendors/bootstrap/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "vendors/fontawesome/css/all.min.css" %} ">
+  <link rel="stylesheet" href="{% static "vendors/themify-icons/themify-icons.css" %} ">
+  <link rel="stylesheet" href="{% static "vendors/linericon/style.css" %} ">
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.theme.default.min.css" %} ">
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.carousel.min.css" %} ">
+
+  <link rel="stylesheet" href="{% static "css/style.css"%}">
+</head>
+<body>
+  <!--================Header Menu Area =================-->
+  {% include "Blog/includes/header.html"%}
+  <!--================Header Menu Area =================-->
+  
+  <main class="site-main">
+    <!--================Hero Banner start =================-->  
+    <section class="mb-30px">
+      <div class="container">
+        <div class="hero-banner">
+          <div class="hero-banner__content">
+            <h3>Tours & Travels</h3>
+            <h1>Amazing Places on earth</h1>
+            <h4>December 12, 2018</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================Hero Banner end =================-->  
+
+    <!--================ Blog slider start =================-->  
+    <section>
+      <div class="container">
+        <div class="owl-carousel owl-theme blog-slider">
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide1.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide2.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide3.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide1.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide2.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+          <div class="card blog__slide text-center">
+            <div class="blog__slide__img">
+              <img class="card-img rounded-0" src="{% static "img/blog/blog-slider/blog-slide3.png"%}" alt="">
+            </div>
+            <div class="blog__slide__content">
+              <a class="blog__slide__label" href="#">Fashion</a>
+              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
+              <p>2 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ Blog slider end =================-->  
+
+    <!--================ Start Blog Post Area =================-->
+    <section class="blog-post-area section-margin mt-4">
+      <div class="container">
+        <div class="row">
+            {% block content %}
+            {% endblock content %}
+
+          <!-- Start Blog Post Siddebar -->
+          {%include "Blog/includes/sidebar.html"%}
+        <!-- end Blog Post Siddebar -->
+        </div>
+    </section>
+    <!--================ End Blog Post Area =================-->
+  </main>
+
+  <!--================ Start Footer Area =================-->
+  {% include "Blog/includes/footer.html"%}
+  <!--================ End Footer Area =================-->
+
+  <script src="{% static "vendors/jquery/jquery-3.2.1.min.js"%}"></script>
+  <script src="{% static "vendors/bootstrap/bootstrap.bundle.min.js"%}"></script>
+  <script src="{% static "vendors/owl-carousel/owl.carousel.min.js"%}"></script>
+  <script src="{% static "js/jquery.ajaxchimp.min.js"%}"></script>
+  <script src="{% static "js/mail-script.js"%}"></script>
+  <script src="{% static "js/main.js"%}"></script>
+</body>
+</html>

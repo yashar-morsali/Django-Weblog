@@ -6,21 +6,45 @@
 
 (Done)find a good template for blog (Bootstrap)
 
-()create models for weblog (
-    posts , categories , users-profile
-    , comments , tags  )
+(Done)create models for weblog (
+    posts , categories , users-profile(staff only)
+    , comments )
 
 
 ()create views and urls for (
     home , post view , search , pagination ,
+    0-todo base.html 
+        (Done)create a base file useing index.html
+        (Done)navbar
+        (Done)title
+        (Done)sidebars
+        (Done)footer
 
+    1-todo index page : 
+        ()load posts
+        ()handel pagination
+        ()load sidebar
+        ()news letter form 
+        ()load top sidebar 
+    
+    2-todo create a search page :
+        ()use archive.html for develop search page 
+        ()add search bar to page 
+        ()develop search form view 
+    
+    3-todo category :
+        ()create a category page useing paegs dropdown menu
+
+    4-todo Contact us :
+        ()load contant us page with static data 
+        ()create its view
 )
+
 () customize template 
 
-
-()apply models and crud on template
+()apply models and crud on posts
 
 ()test the website for using with admin page 
 
-()customize admin panel or create a new one for users login 
+(Done)customize admin panel or create a new one for users login 
 and crud oprations 

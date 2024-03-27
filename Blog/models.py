@@ -41,7 +41,7 @@ class Post(models.Model):
     body = RichTextField()
     created_at = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey('Category', on_delete=models.CASCADE , null=False , blank=False )
-
+    
     class Meta:
         ordering = ['created_at']
     
